@@ -1,0 +1,14 @@
+{
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.run": "onType",
+  "eslint.validate": [
+    "typescript",
+    "typescriptreact",
+    "javascript",
+    "javascriptreact"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "tsx": true // enable linting for tsx files
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "requireConfigFile": false,
+    "project": ["./tsconfig.json"]
+  },
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:react/jsx-runtime",
+    "airbnb",
+    "airbnb-typescript",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint", "react", "prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "no-unused-vars": "warn",
+    "import/newline-after-import": ["error", { "count": 1 }],
+    // "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+
+    "@typescript-eslint/no-inferrable-types": "error",
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "extendDefaults": true,
+        "types": {
+          "{}": false
+        }
+      }
+    ],
+
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "off",
+    "react/prop-types": ["off"],
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          ["parent", "sibling", "index"],
+          "object",
+          "type"
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "newlines-between": "always",
+        "pathGroups": [
+          {
+            "pattern": "@*",
+            "group": "internal",
+            "position": "after"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["internal"],
+        "distinctGroup": true
+      }
+    ]
+  }
+}

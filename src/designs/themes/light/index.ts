@@ -1,61 +1,37 @@
 import { DefaultTheme } from 'styled-components';
 
 const theme: DefaultTheme = {
-  type: 'light',
+  name: 'light',
   fontFamily: {
     primary: '',
     seconday: '',
   },
   colors: {
-    // Primary Colors
-    base900: '',
-    base800: '',
-    base700: '',
-    base600: '',
-    base500: '',
-    base400: '',
-    base300: '',
-    base200: '',
-    base100: '',
-    base50: '',
-
-    // Accent Colors
-    accent: 'black',
-    accentHover: '',
-
-    // Surface Colors
-    background: '',
-    surface: '',
-
-    // Secondary Colors
-    purple: '',
-    blue: '',
-    green: '',
-    lightGreen: '',
-
-    // Semantic Colors
-    warning: '',
-    error: '',
-    link: '',
-    info: '',
-    caution: '',
-    success: '',
-
-    // Gradient colors
-    glass: '',
-    linearDark: '',
-    radialDark: '',
-
-    // Neutral Colors
+    // Common Colors
     transparent: 'transparent',
     white: 'white',
     black: 'black',
+    black90: '#000000e6',
+    opacity40: '#f9f9f966',
 
-    // TranslucentBlack Colors
-    black90: '',
-    black80: '',
+    // Primary Colors
+    primary500: '#00386C',
+    primary400: '#0063E5',
+    primary300: '#037AEB',
+    primary200: '#068DFF',
+    primary100: '#67BDFF',
 
-    // TranslucentWhite Colors
+    // Accent Colors
+    accent200: '#02E7F5',
+
+    // Neutral Colors
+    neutral700: '#101116',
+    neutral600: '#1A1D29',
+    neutral500: '#30333E',
+    neutral400: '#5F6169',
+    neutral300: '#74757D',
+    neutral200: '#C8C9CB',
+    neutral100: '#F9F9F9',
   },
   shadows: {
     small: '0px 2px 8px rgba(0, 0, 0, 0.04)',

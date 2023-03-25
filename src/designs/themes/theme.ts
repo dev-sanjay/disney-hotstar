@@ -1,59 +1,23 @@
-export type ThemeType = 'light' | 'dark';
+export type ThemeName = 'light' | 'dark';
 
-type BaseColors =
-  | 'base900'
-  | 'base800'
-  | 'base700'
-  | 'base600'
-  | 'base500'
-  | 'base400'
-  | 'base300'
-  | 'base200'
-  | 'base100'
-  | 'base50';
-type AccentColors = 'accent' | 'accentHover';
-type SurfaceColors = 'background' | 'surface';
+type CommonColors = 'white' | 'black' | 'black90' | 'transparent' | 'opacity40';
+type PrimaryColors =
+  | 'primary500'
+  | 'primary400'
+  | 'primary300'
+  | 'primary200'
+  | 'primary100';
+type AccentColors = 'accent200';
+type NeutralColors =
+  | 'neutral700'
+  | 'neutral600'
+  | 'neutral500'
+  | 'neutral400'
+  | 'neutral300'
+  | 'neutral200'
+  | 'neutral100';
 
-type PrimaryColors = BaseColors | AccentColors | SurfaceColors;
-type SecondaryColors = 'purple' | 'blue' | 'green' | 'lightGreen';
-type SemanticColors =
-  | 'warning'
-  | 'error'
-  | 'link'
-  | 'info'
-  | 'caution'
-  | 'success';
-type GradientColors = 'glass' | 'linearDark' | 'radialDark';
-type NeutralColors = 'black' | 'white' | 'transparent';
-type TranslucentBlack =
-  | 'black90'
-  | 'black80'
-  | 'black70'
-  | 'black60'
-  | 'black50'
-  | 'black40'
-  | 'black30'
-  | 'black20'
-  | 'black10';
-type TranslucentWhite =
-  | 'white90'
-  | 'white80'
-  | 'white70'
-  | 'white60'
-  | 'white50'
-  | 'white40'
-  | 'white30'
-  | 'white20'
-  | 'white10';
-
-type Colors =
-  | PrimaryColors
-  | SecondaryColors
-  | SemanticColors
-  | GradientColors
-  | NeutralColors
-  | TranslucentWhite
-  | TranslucentBlack;
+type Colors = CommonColors | PrimaryColors | AccentColors | NeutralColors;
 
 interface Shadows {
   small: string;
@@ -71,14 +35,13 @@ interface Blur {
 
 declare module 'styled-components' {
   interface DefaultTheme {
-    type: ThemeType;
+    name: ThemeName;
     fontFamily: {
       primary: string;
       seconday: string;
     };
 
-    // TODO: Remove partial once all colors are added
-    colors: Partial<Record<Colors, string>>;
+    colors: Record<Colors, string>;
     shadows: Shadows;
     blur: Blur;
   }

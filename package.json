@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -p 6007",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "webfont": "cross-env node_modules/webfont/dist/cli.js './.webfontrc.js' --font-height 1000 --normalize true"
   },
   "dependencies": {
     "next": "13.2.4",
@@ -31,6 +32,7 @@
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
     "babel-loader": "^8.3.0",
     "cross-env": "^7.0.3",
     "eslint": "^8.36.0",
@@ -46,6 +48,8 @@
     "eslint-plugin-storybook": "^0.6.11",
     "prettier": "^2.8.4",
     "react-docgen-typescript-plugin": "^1.0.5",
-    "typescript": "5.0.2"
+    "storybook-addon-styled-component-theme": "^2.0.0",
+    "typescript": "5.0.2",
+    "webfont": "^11.2.26"
   }
 }

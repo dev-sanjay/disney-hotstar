@@ -2,11 +2,11 @@ import { createContext, useMemo, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import themes from '@themes/index';
-import { ThemeType } from '@themes/theme';
+import { ThemeName } from '@themes/theme';
 
 type Context = {
-  theme: ThemeType;
-  setTheme: (themeType: ThemeType) => void;
+  theme: ThemeName;
+  setTheme: (themeType: ThemeName) => void;
 };
 
 export const ThemeContext = createContext<Context>({
@@ -17,7 +17,7 @@ export const ThemeContext = createContext<Context>({
 export const ThemeContextProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  const [activeTheme, setActiveTheme] = useState<ThemeType>('light');
+  const [activeTheme, setActiveTheme] = useState<ThemeName>('light');
 
   const context: Context = useMemo(
     () => ({

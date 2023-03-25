@@ -2,9 +2,9 @@ import { DefaultTheme } from 'styled-components';
 
 import darkTheme from './dark';
 import lightTheme from './light';
-import { ThemeType } from './theme';
+import { ThemeName } from './theme';
 
-const themes: Record<ThemeType, DefaultTheme> = {
+const themes: Record<ThemeName, DefaultTheme> = {
   light: lightTheme,
   dark: darkTheme,
 };

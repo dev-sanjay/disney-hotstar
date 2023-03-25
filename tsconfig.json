@@ -19,8 +19,10 @@
       "@context/*": ["context/*"],
       "@components/*": ["components/*"],
       "@themes/*": ["designs/themes/*"],
-      "@iconography": ["designs/iconography/*"],
-      "@typography": ["designs/typography/*"],
+      "@atoms/icon": ["designs/atoms/icon/index"],
+      "@atoms/button/*": ["designs/atoms/button/*"],
+      "@typography": ["designs/typography/index"],
+      "@typography/*": ["designs/typography/*"],
       "@hooks/*": ["hooks/*"],
       "@styles/*": ["styles/*"]
     }

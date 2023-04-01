@@ -35,6 +35,8 @@ interface Blur {
 
 interface Gradient {
   linear: string;
+  linearDark: string;
+  linearExtraDark: string;
 }
 
 declare module 'styled-components' {

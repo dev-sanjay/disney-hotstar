@@ -1,3 +1,5 @@
-const Series: React.FC = () => <h1>Series</h1>;
+import Series from '@components/pages/series';
 
-export default Series;
+const SeriesPage: React.FC = () => <Series />;
+
+export default SeriesPage;

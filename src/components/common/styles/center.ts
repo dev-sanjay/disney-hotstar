@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export interface ICenter {
+interface CenterProps {
   /**
    * Center align items with respect to **main axis**
    */
@@ -12,11 +12,11 @@ export interface ICenter {
   crossAxis: boolean;
 }
 
-const StyledCenter = styled.div<ICenter>`
+export const Center = styled.div<CenterProps>`
   display: flex;
 
   ${({ mainAxis }) => mainAxis && 'justify-content: center;'}
   ${({ crossAxis }) => crossAxis && 'align-items: center;'}
 `;
 
-export default StyledCenter;
+export default Center;

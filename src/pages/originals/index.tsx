@@ -1,3 +1,5 @@
-const Originals: React.FC = () => <h1>Originals</h1>;
+import Originals from '@components/pages/originals';
 
-export default Originals;
+const OriginalsPage: React.FC = () => <Originals />;
+
+export default OriginalsPage;

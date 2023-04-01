@@ -48,6 +48,10 @@ const theme: DefaultTheme = {
   gradient: {
     linear:
       'linear-gradient(180deg, #0E1012 -50.62%, rgba(14, 16, 18, 0) 100%)',
+    linearDark:
+      'linear-gradient(153.1deg, #000000 -13.38%, rgba(0, 0, 0, 0) 64.68%)',
+    linearExtraDark:
+      'linear-gradient(179.79deg, rgba(26, 29, 41, 0) 15.81%, rgba(26, 29, 41, 0.791667) 64.73%, #1A1D29 97.83%)',
   },
 };
 

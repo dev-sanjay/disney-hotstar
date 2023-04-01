@@ -1,3 +1,5 @@
-const Movies: React.FC = () => <h1>Movies</h1>;
+import Movies from '@components/pages/movies';
 
-export default Movies;
+const MoviesPage: React.FC = () => <Movies />;
+
+export default MoviesPage;

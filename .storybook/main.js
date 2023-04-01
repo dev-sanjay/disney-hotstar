@@ -12,6 +12,7 @@ module.exports = {
   webpackFinal: async (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
+      "@assets": path.resolve(__dirname, '../src/assets'),
       "@atoms/button": path.resolve(__dirname, '../src/designs/atoms/button'),
       "@atoms/icon": path.resolve(__dirname, '../src/designs/atoms/icon'),
       "@components": path.resolve(__dirname, '../src/components'),

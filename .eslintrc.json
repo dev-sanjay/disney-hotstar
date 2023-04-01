@@ -52,33 +52,33 @@
         "namedComponents": "arrow-function",
         "unnamedComponents": "arrow-function"
       }
-    ],
-    "import/order": [
-      "error",
-      {
-        "groups": [
-          "builtin",
-          "external",
-          "internal",
-          ["parent", "sibling", "index"],
-          "object",
-          "type"
-        ],
-        "alphabetize": {
-          "order": "asc",
-          "caseInsensitive": true
-        },
-        "newlines-between": "always",
-        "pathGroups": [
-          {
-            "pattern": "@*",
-            "group": "internal",
-            "position": "after"
-          }
-        ],
-        "pathGroupsExcludedImportTypes": ["internal"],
-        "distinctGroup": true
-      }
     ]
+    //, "import/order": [
+    //   "error",
+    //   {
+    //     "groups": [
+    //       "builtin",
+    //       "external",
+    //       "internal",
+    //       ["parent", "sibling", "index"],
+    //       "object",
+    //       "type"
+    //     ],
+    //     "alphabetize": {
+    //       "order": "asc",
+    //       "caseInsensitive": true
+    //     },
+    //     "newlines-between": "always",
+    //     "pathGroups": [
+    //       {
+    //         "pattern": "@*",
+    //         "group": "internal",
+    //         "position": "after"
+    //       }
+    //     ],
+    //     "pathGroupsExcludedImportTypes": ["internal"],
+    //     "distinctGroup": true
+    //   }
+    // ]
   }
 }

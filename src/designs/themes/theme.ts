@@ -33,6 +33,10 @@ interface Blur {
   large: string;
 }
 
+interface Gradient {
+  linear: string;
+}
+
 declare module 'styled-components' {
   interface DefaultTheme {
     name: ThemeName;
@@ -44,5 +48,6 @@ declare module 'styled-components' {
     colors: Record<Colors, string>;
     shadows: Shadows;
     blur: Blur;
+    gradient: Gradient;
   }
 }

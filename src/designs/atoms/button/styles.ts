@@ -34,7 +34,7 @@ export interface IButton {
    */
   shape?: {
     /**
-     * Circular button for which **Height** and **Width** are same and border are rounded
+     * Circular button for which **Height** and **Width** are same and border is rounded
      */
     circular?: {
       /**
@@ -47,7 +47,7 @@ export interface IButton {
      */
     square?: {
       /**
-       * Lenge of the one side of the square
+       * Length of the one side of the square
        */
       side: string;
     };
@@ -151,10 +151,10 @@ const StyledButton = styled.button<IButtonStyles>`
   border: 0;
   border-radius: 4px;
 
-  ${({ $style }) => $style && css($style)}
   ${({ theme, varient }) => getStylesAsPerTheme(theme, varient)}
   ${({ hasIcon }) => getStylesAsPerSize(hasIcon)}
   ${({ shape }) => getStylesAsPerShape({ shape })}
+  ${({ $style }) => $style && css($style)}
 `;
 
 export default StyledButton;

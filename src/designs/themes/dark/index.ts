@@ -45,6 +45,10 @@ const theme: DefaultTheme = {
     large: 'blur(12px)',
     layer: 'blur(60px)',
   },
+  gradient: {
+    linear:
+      'linear-gradient(180deg, #0E1012 -50.62%, rgba(14, 16, 18, 0) 100%)',
+  },
 };
 
 export default theme;

@@ -6,6 +6,7 @@ import { Montserrat } from 'next/font/google';
 import Head from 'next/head';
 
 import { ThemeContextProvider } from '@context/theme';
+import Header from '@components/common/header';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -24,6 +25,7 @@ export default ({ Component, pageProps }: AppProps) => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <main className={montserrat.className}>
+      <Header />
       <Component {...pageProps} />
     </main>
   </ThemeContextProvider>

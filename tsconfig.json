@@ -16,6 +16,7 @@
     "incremental": true,
     "baseUrl": "./src",
     "paths": {
+      "@assets/*": ["assets/*"],
       "@context/*": ["context/*"],
       "@components/*": ["components/*"],
       "@themes/*": ["designs/themes/*"],
@@ -27,6 +28,6 @@
       "@styles/*": ["styles/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.png"],
   "exclude": ["node_modules"]
 }

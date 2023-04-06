@@ -1,6 +1,6 @@
 {
   "name": "disney-hotstar",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -55,7 +55,7 @@
     "webfont": "^11.2.26"
   },
   "nextBundleAnalysis": {
-    "budget": 307200,
+    "budget": 10,
     "budgetPercentIncreaseRed": 20,
     "showDetails": true
   }

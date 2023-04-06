@@ -12,6 +12,22 @@ defaults:
     # change this if your nextjs app does not live at the root of the repo
     working-directory: ./
 
+permissions:
+  actions: write
+  contents: write
+  issues: write
+  repository-projects: write
+  
+  checks: write
+  deployments: write
+  id-token: write
+  discussions: write
+  packages: write
+  pages: write
+  pull-requests: write
+  security-events: write
+  statuses: write
+
 jobs:
   analyze:
     runs-on: ubuntu-latest
@@ -97,14 +113,14 @@ jobs:
           body-includes: '<!-- __NEXTJS_BUNDLE -->'
 
       - name: Create Comment
-        uses: peter-evans/create-or-update-comment@v1.4.4
+        uses: peter-evans/create-or-update-comment@v3
         if: success() && github.event.number && steps.fc.outputs.comment-id == 0
         with:
           issue-number: ${{ github.event.number }}
           body: ${{ steps.get-comment-body.outputs.body }}
 
       - name: Update Comment
-        uses: peter-evans/create-or-update-comment@v1.4.4
+        uses: peter-evans/create-or-update-comment@v3
         if: success() && github.event.number && steps.fc.outputs.comment-id != 0
         with:
           issue-number: ${{ github.event.number }}

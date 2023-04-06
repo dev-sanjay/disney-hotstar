@@ -6,7 +6,6 @@ import Brands from '@components/brands';
 const Home: React.FC = () => (
   <Wrapper backgroundImage={coverImage}>
     <Information />
-
     <Brands />
   </Wrapper>
 );

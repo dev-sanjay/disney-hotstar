@@ -55,7 +55,7 @@
     "webfont": "^11.2.26"
   },
   "nextBundleAnalysis": {
-    "budget": 307200,
+    "budget": 10,
     "budgetPercentIncreaseRed": 20,
     "showDetails": true
   }

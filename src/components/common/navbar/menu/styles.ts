@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-import { Center } from '@components/common/styles';
+import { Flex } from '@components/common/styles';
 
-const StyledMenu = styled(Center)<{ isActive: boolean }>`
+const StyledMenu = styled(Flex)<{ isActive: boolean }>`
   gap: 8px;
 
   color: ${({ theme, isActive }) =>

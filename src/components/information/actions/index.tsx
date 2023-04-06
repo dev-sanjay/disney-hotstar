@@ -1,0 +1,21 @@
+import { TextIconButton } from '@atoms/button/text-icon-button';
+import { StyledActions } from './styles';
+
+const Actions: React.FC = () => (
+  <StyledActions>
+    <TextIconButton
+      varient="secondary"
+      icon={{ name: 'play' }}
+      typography="Montserrat/Bold/16px"
+      text="VER AHORA"
+    />
+    <TextIconButton
+      varient="outline"
+      icon={{ name: 'info' }}
+      typography="Montserrat/Bold/16px"
+      text="MÁS INFORMACIÓN"
+    />
+  </StyledActions>
+);
+
+export default Actions;

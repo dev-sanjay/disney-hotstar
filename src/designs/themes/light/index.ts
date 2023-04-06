@@ -13,6 +13,8 @@ const theme: DefaultTheme = {
     black: 'black',
     black90: '#000000e6',
     opacity40: '#f9f9f966',
+    border: '#353843',
+    lightBlack: '#40464E',
 
     // Primary Colors
     primary500: '#00386C',

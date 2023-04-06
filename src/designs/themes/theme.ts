@@ -1,6 +1,13 @@
 export type ThemeName = 'light' | 'dark';
 
-type CommonColors = 'white' | 'black' | 'black90' | 'transparent' | 'opacity40';
+type CommonColors =
+  | 'white'
+  | 'black'
+  | 'black90'
+  | 'transparent'
+  | 'opacity40'
+  | 'border'
+  | 'lightBlack';
 type PrimaryColors =
   | 'primary500'
   | 'primary400'

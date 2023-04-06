@@ -1,22 +1,22 @@
 import styled from 'styled-components';
 
-interface CenterProps {
+interface FlexProps {
   /**
    * Center align items with respect to **main axis**
    */
-  mainAxis: boolean;
+  mainAxis?: boolean;
 
   /**
    * Center align items with respect to **cross axis**
    */
-  crossAxis: boolean;
+  crossAxis?: boolean;
 }
 
-export const Center = styled.div<CenterProps>`
+export const Flex = styled.div<FlexProps>`
   display: flex;
 
   ${({ mainAxis }) => mainAxis && 'justify-content: center;'}
   ${({ crossAxis }) => crossAxis && 'align-items: center;'}
 `;
 
-export default Center;
+export default Flex;

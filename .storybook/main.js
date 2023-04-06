@@ -7,7 +7,8 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     '@storybook/addon-a11y',
-    "storybook-addon-styled-component-theme/dist/preset"
+    "storybook-addon-styled-component-theme/dist/preset",
+    "storybook-addon-next"
   ],
   webpackFinal: async (config) => {
     config.resolve.alias = {

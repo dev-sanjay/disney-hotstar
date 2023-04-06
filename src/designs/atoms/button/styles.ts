@@ -151,6 +151,8 @@ const StyledButton = styled.button<IButtonStyles>`
   border: 0;
   border-radius: 4px;
 
+  transition: all 0.3s ease-out;
+
   ${({ theme, varient }) => getStylesAsPerTheme(theme, varient)}
   ${({ hasIcon }) => getStylesAsPerSize(hasIcon)}
   ${({ shape }) => getStylesAsPerShape({ shape })}

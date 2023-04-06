@@ -5,8 +5,6 @@ export interface WrapperStylesProps {
 }
 
 const StyledWrapper = styled.section<WrapperStylesProps>`
-  position: relative;
-
   ${({ $style }) => $style && css($style)}
 `;
 
@@ -14,7 +12,7 @@ export const ImageContainer = styled.div`
   display: flex;
   position: relative;
 
-  &::before,
+  &:before,
   &::after {
     content: '';
     position: absolute;
@@ -31,11 +29,6 @@ export const ImageContainer = styled.div`
   }
 `;
 
-export const Content = styled.div`
-  position: absolute;
-  width: 100%;
-  top: 0;
-  padding-top: 76px;
-`;
+export const Content = styled.div``;
 
 export default StyledWrapper;

@@ -49,8 +49,14 @@
     "eslint-plugin-storybook": "^0.6.11",
     "prettier": "^2.8.4",
     "react-docgen-typescript-plugin": "^1.0.5",
+    "storybook-addon-next": "^1.8.0",
     "storybook-addon-styled-component-theme": "^2.0.0",
     "typescript": "5.0.2",
     "webfont": "^11.2.26"
+  },
+  "nextBundleAnalysis": {
+    "budget": 307200,
+    "budgetPercentIncreaseRed": 20,
+    "showDetails": true
   }
 }

@@ -7,13 +7,13 @@ const Actions: React.FC = () => (
       varient="secondary"
       icon={{ name: 'play' }}
       typography="Montserrat/Bold/16px"
-      text="VER AHORA"
+      text="WATCH NOW"
     />
     <TextIconButton
       varient="outline"
       icon={{ name: 'info' }}
       typography="Montserrat/Bold/16px"
-      text="MÁS INFORMACIÓN"
+      text="MORE INFORMATION"
     />
   </StyledActions>
 );

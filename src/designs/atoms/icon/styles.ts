@@ -39,10 +39,16 @@ const sizeMap: Record<Size, string> = {
   'icon-10x': '10rem',
 };
 
-const StyledIcon = styled.i<{ size?: Size; $style?: CSSObject }>`
-  font-size: ${({ size = 'icon-1.5x' }) => sizeMap[size]};
+const StyledIconWrapper = styled.span<{ size?: Size; $style?: CSSObject }>`
+  display: inline-block;
+  width: ${({ size = 'icon-1.5x' }) => sizeMap[size]};
+  height: ${({ size = 'icon-1.5x' }) => sizeMap[size]};
 
   ${({ $style }) => $style && css($style)}
 `;
 
-export default StyledIcon;
+export const StyledIcon = styled.i<{ size?: Size }>`
+  font-size: ${({ size = 'icon-1.5x' }) => sizeMap[size]};
+`;
+
+export default StyledIconWrapper;

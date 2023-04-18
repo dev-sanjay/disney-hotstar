@@ -1,11 +1,7 @@
 import { CSSObject } from 'styled-components';
 import Image, { StaticImageData } from 'next/image';
 
-import StyledWrapper, {
-  Content,
-  ImageContainer,
-  WrapperStylesProps,
-} from './styles';
+import StyledWrapper, { VideoContainer, WrapperStylesProps } from './styles';
 
 interface WrapperProps extends WrapperStylesProps {
   children?: React.ReactNode;
@@ -28,11 +24,14 @@ const Wrapper: React.FC<WrapperProps> = ({
   ...rest
 }) => (
   <StyledWrapper {...rest} $style={style}>
-    <ImageContainer>
-      <Image src={backgroundImage} alt="" />
-    </ImageContainer>
+    <VideoContainer>
+      {/* <Image src={backgroundImage} alt="" priority /> */}
+      <video muted loop autoPlay>
+        <source src="/assets/gaslight.mp4" />
+      </video>
+    </VideoContainer>
 
-    <Content>{children}</Content>
+    {children}
   </StyledWrapper>
 );
 

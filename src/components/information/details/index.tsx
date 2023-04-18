@@ -7,13 +7,13 @@ import { ImageWrapper, StyledDetails } from './styles';
 const Details: React.FC = () => (
   <StyledDetails>
     <ImageWrapper>
-      <Image src={logoImage} alt="logo " />
+      <Image src={logoImage} alt="logo" priority />
     </ImageWrapper>
 
     <Typography typography="Montserrat/Normal/20px">
-      La película de Disney y Pixar “Luca” está ambientada en un pueblo de la
-      costa italiana y cuenta la historia de un adolescente que pasa un verano
-      inolvidable lleno de aventuras junto con su nuevo amigo Alberto.
+      The Disney and Pixar film &quot;Luca&quot; is set in a town in the Italian
+      coast and tells the story of a teenager who spends a summer unforgettable
+      full of adventures together with his new friend Alberto.
     </Typography>
   </StyledDetails>
 );

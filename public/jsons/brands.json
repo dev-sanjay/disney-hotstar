@@ -1,0 +1,77 @@
+[
+  {
+    "id": "b1",
+    "name": "disney",
+    "redirectUrl": "",
+    "media": {
+      "desktop": {
+        "image": "/assets/brands/disnep/images/disnep.png",
+        "video": "/assets/brands/disnep/videos/disnep.mp4"
+      },
+      "mobile": {
+        "image": "/assets/brands/disnep/images/disnep-mob.png",
+        "video": "/assets/brands/disnep/videos/disnep-mob.mp4"
+      }
+    }
+  },
+  {
+    "id": "b2",
+    "name": "pixar",
+    "redirectUrl": "",
+    "media": {
+      "desktop": {
+        "image": "/assets/brands/pixar/images/pixar.png",
+        "video": "/assets/brands/pixar/videos/pixar.mp4"
+      },
+      "mobile": {
+        "image": "/assets/brands/pixar/images/pixar-mob.png",
+        "video": "/assets/brands/pixar/videos/pixar-mob.mp4"
+      }
+    }
+  },
+  {
+    "id": "b3",
+    "name": "marvel",
+    "redirectUrl": "",
+    "media": {
+      "desktop": {
+        "image": "/assets/brands/marvel/images/marvel.png",
+        "video": "/assets/brands/marvel/videos/marvel.mp4"
+      },
+      "mobile": {
+        "image": "/assets/brands/marvel/images/marvel-mob.png",
+        "video": "/assets/brands/marvel/videos/marvel-mob.mp4"
+      }
+    }
+  },
+  {
+    "id": "b4",
+    "name": "star wars",
+    "redirectUrl": "",
+    "media": {
+      "desktop": {
+        "image": "/assets/brands/star-wars/images/star-wars.png",
+        "video": "/assets/brands/star-wars/videos/star-wars.mp4"
+      },
+      "mobile": {
+        "image": "/assets/brands/star-wars/images/star-wars-mob.png",
+        "video": "/assets/brands/star-wars/videos/star-wars-mob.mp4"
+      }
+    }
+  },
+  {
+    "id": "b5",
+    "name": "national geographic",
+    "redirectUrl": "",
+    "media": {
+      "desktop": {
+        "image": "/assets/brands/national-geographic/images/national-geographic.png",
+        "video": "/assets/brands/national-geographic/videos/national-geographic.mp4"
+      },
+      "mobile": {
+        "image": "/assets/brands/national-geographic/images/national-geographic-mob.png",
+        "video": "/assets/brands/national-geographic/videos/national-geographic-mob.mp4"
+      }
+    }
+  }
+]

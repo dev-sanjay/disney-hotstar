@@ -8,9 +8,14 @@ const StyledWrapper = styled.section<WrapperStylesProps>`
   ${({ $style }) => $style && css($style)}
 `;
 
-export const ImageContainer = styled.div`
+export const VideoContainer = styled.div`
   display: flex;
-  position: relative;
+  position: fixed;
+  overflow: hidden;
+
+  video {
+    transform: scale(1.36);
+  }
 
   &:before,
   &::after {
@@ -21,14 +26,9 @@ export const ImageContainer = styled.div`
     width: 100%;
     height: 100%;
   }
-  &::before {
-    background: ${({ theme }) => theme.gradient.linearDark};
-  }
   &::after {
     background: ${({ theme }) => theme.gradient.linearExtraDark};
   }
 `;
-
-export const Content = styled.div``;
 
 export default StyledWrapper;

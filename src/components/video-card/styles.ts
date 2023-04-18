@@ -12,6 +12,8 @@ export const StyledVideoCard = styled(Card)<VideoCardStylesProps>`
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease-out;
+  width: 25%;
+  height: auto;
 
   &:hover {
     transform: scale(1.1);

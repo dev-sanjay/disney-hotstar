@@ -1,6 +1,6 @@
 import { CSSObject } from 'styled-components';
 
-import StyledIcon, { Size } from './styles';
+import StyledIconWrapper, { Size, StyledIcon } from './styles';
 
 export type IconName =
   | 'add'
@@ -46,8 +46,10 @@ export interface IconProps {
   style?: CSSObject;
 }
 
-const Icon: React.FC<IconProps> = ({ name, style, ...rest }) => (
-  <StyledIcon className={`icon icon-${name}`} $style={style} {...rest} />
+const Icon: React.FC<IconProps> = ({ name, style, size, ...rest }) => (
+  <StyledIconWrapper $style={style} {...rest} size={size}>
+    <StyledIcon className={`icon icon-${name}`} size={size} />
+  </StyledIconWrapper>
 );
 
 export default Icon;

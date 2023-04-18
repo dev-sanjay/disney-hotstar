@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Ellipsis = styled.p`
+const Ellipsis = styled.p`
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;

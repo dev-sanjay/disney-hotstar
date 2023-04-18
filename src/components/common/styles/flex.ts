@@ -12,7 +12,7 @@ interface FlexProps {
   crossAxis?: boolean;
 }
 
-export const Flex = styled.div<FlexProps>`
+const Flex = styled.div<FlexProps>`
   display: flex;
 
   ${({ mainAxis }) => mainAxis && 'justify-content: center;'}
